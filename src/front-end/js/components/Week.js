@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { PropTypes } from 'prop-types';
 
-export default class App extends React.Component {
+export default class Week extends React.Component {
   constructor(props) {
     super(props);
 
@@ -38,7 +39,7 @@ export default class App extends React.Component {
   render() {
     const content =
       this.state.data.length > 0 ? (
-        <div>
+        <div className="cooking">
           <span className="cook-combo">
             cook combo: {this.state.data[0].moddedWeek}
             <div className="pagination">
@@ -97,3 +98,11 @@ export default class App extends React.Component {
     return <div className="content week">{content}</div>;
   }
 }
+
+Week.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      week: PropTypes.string
+    })
+  })
+};
