@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component matches snapshot 1`] = `
+<div
+  className="header"
+>
+  <Link
+    replace={false}
+    to="/"
+  >
+    bouse
+  </Link>
+   / 
+  <Link
+    replace={false}
+    to="/cookbot/week"
+  >
+    cookbot
+  </Link>
+   / 
+  <a
+    className="external"
+    href="https://www.instagram.com/cubcoop/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    insta
+  </a>
+</div>
+`;

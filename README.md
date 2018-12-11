@@ -45,5 +45,5 @@ npm run lint
 ```
 #### fix simple lint issues (predominantly prettier issues)
 ```
-npm run lint -- --fix
+npm run lint:fix
 ```

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class App extends React.Component {
+export default class Home extends React.Component {
   render() {
     const names = [
       'booty',
@@ -10,7 +10,9 @@ export default class App extends React.Component {
       'bee',
       'blue',
       'bonfire',
-      'big ups to all my haters'
+      'big ups to all my haters',
+      'bird',
+      'big'
     ];
     const currName = names[Math.floor(Math.random() * names.length)];
 
