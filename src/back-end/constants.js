@@ -37,8 +37,7 @@ const DB_NAME = 'bousecook';
 const COLLECTION_NAME =
   process.env.NODE_ENV === 'production' ? 'docs_prod' : 'docs';
 
-const USER_COLLECTION_NAME =
-  process.env.NODE_ENV === 'production' ? 'users_prod' : 'users';
+const USER_COLLECTION_NAME = 'users'
 
 const DATE_FORMAT = 'dddd, MMMM Do';
 
