@@ -1,0 +1,134 @@
+body {
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+div {
+  box-sizing: border-box;
+}
+a,
+a:visited {
+  color: white;
+}
+a:hover {
+  color: black;
+  background-color: white;
+}
+
+.external,
+.external:visited {
+  color: blue;
+}
+.external:hover {
+  color: white;
+  background-color: blue;
+}
+
+.app-router {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  flex-grow: 0;
+  cursor: default;
+}
+
+.content {
+  text-align: left;
+  flex: 1 1 auto;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 32px;
+}
+.content .centered {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.home {
+  font-size: 192px;
+}
+.home .centered {
+  text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  .home {
+    font-size: 128px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .home {
+    font-size: 80px;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .home {
+    font-size: 48px;
+  }
+}
+
+.week .cook-combo {
+  font-size: 12px;
+  color: #444444;
+}
+.week .cooking-days {
+  width: 800px;
+  max-width: 100%;
+  align-self: center;
+}
+.week .cooking-day:not(:last-child) {
+  margin-bottom: 64px;
+}
+.week .datum {
+  display: flex;
+  flex: 0 0 auto;
+}
+.week .datum:not(:last-child) {
+  margin-bottom: 8px;
+}
+.week .title {
+  width: 192px;
+  text-align: right;
+  flex: 0 0 auto;
+  margin-right: 32px;
+  color: #444444;
+}
+.week .value.list {
+  display: flex;
+  flex-direction: column;
+}
+.week .value.list a:not(:last-child) {
+  flex: 0 0 auto;
+  margin-bottom: 8px;
+}
+@media only screen and (max-width: 768px) {
+  .week {
+    font-size: 28px;
+  }
+  .week .title {
+    width: 156px;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .week {
+    font-size: 18px;
+  }
+  .week .title {
+    width: 96px;
+  }
+}
+.week .pagination {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}

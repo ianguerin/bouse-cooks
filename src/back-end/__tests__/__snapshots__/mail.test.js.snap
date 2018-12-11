@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mail module createMail function creates a string with hyperlinked suggestions 1`] = `
+Object {
+  "from": "tim.the.robot@bouse.website",
+  "html": "The crew: Boba, Uncle Chicken, Cha-cha<br/><br/>You're cooking dinner this week (shoot for 10 servings)!<br/>That includes groceries, cooking, and dishes.<br/><br/>Need some suggestions?<br/><a href=http://1.example.com>Example 1</a><br/><a href=http://2.example.com>Example 2</a><br/><br/><br/>love-<br/>tim the robot<br/><br/>ps- peep this week @ <a href=\\"http://bouse.website/cookbot/week/1\\">bouse's cookbot</a>",
+  "subject": "You are cooking a meal on undefined!",
+  "to": Array [
+    undefined,
+    undefined,
+    undefined,
+  ],
+}
+`;
+
+exports[`Mail module createMail function creates a string without any suggestions 1`] = `
+Object {
+  "from": "tim.the.robot@bouse.website",
+  "html": "The crew: Boba, Uncle Chicken, Cha-cha<br/><br/>You're cooking dinner this week (shoot for 10 servings)!<br/>That includes groceries, cooking, and dishes.<br/><br/><br/>love-<br/>tim the robot<br/><br/>ps- peep this week @ <a href=\\"http://bouse.website/cookbot/week/1\\">bouse's cookbot</a>",
+  "subject": "You are cooking a meal on undefined!",
+  "to": Array [
+    undefined,
+    undefined,
+    undefined,
+  ],
+}
+`;
