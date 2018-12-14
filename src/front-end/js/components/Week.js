@@ -9,7 +9,8 @@ export default class Week extends React.Component {
     this.fetchData = this.fetchData.bind(this);
 
     this.state = {
-      data: []
+      data: [],
+      isHoliday: false
     };
   }
 
@@ -30,9 +31,17 @@ export default class Week extends React.Component {
 
     const response = await fetch(`/api/week/${week}`);
     const json = await response.json();
+    console.log({ json });
+
+    if (json.isHoliday) {
+      return this.setState({
+        isHoliday: true
+      });
+    }
 
     this.setState({
-      data: Array.from(json)
+      data: Array.from(json.digests),
+      isHoliday: false
     });
   }
 
@@ -92,7 +101,11 @@ export default class Week extends React.Component {
           </div>
         </div>
       ) : (
-        <div className="centered">loading something good...</div>
+        <div className="centered">
+          {this.state.isHoliday
+            ? "nothing to see, it's a holiday"
+            : 'loading something good...'}
+        </div>
       );
 
     return <div className="content week">{content}</div>;

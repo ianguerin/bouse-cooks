@@ -1,6 +1,6 @@
 {
   "name": "bouse-cooks",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "server.js",
   "license": "MIT",
   "scripts": {
@@ -9,11 +9,11 @@
     "lint": "eslint ./src/*",
     "lint:fix": "npm run lint -- --fix",
     "format": "prettier-eslint --write \"src/**/*.js\"",
-    "dev:back": "NODE_ENV=dev node src/back-end/server",
+    "dev:back": "NODE_ENV=dev PAUSE_FOR_HOLIDAY=true node src/back-end/server",
     "dev:front": "parcel watch src/front-end/index.html",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "weekly": "node src/back-end/scripts/alert"
+    "weekly": "PAUSE_FOR_HOLIDAY=true node src/back-end/scripts/alert"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
@@ -80,10 +80,10 @@
     ],
     "coverageThreshold": {
       "global": {
-        "statements": 40.48,
-        "branches": 22.73,
-        "functions": 36,
-        "lines": 41.09
+        "statements": 41.2,
+        "branches": 26.42,
+        "functions": 44,
+        "lines": 41.83
       }
     }
   }

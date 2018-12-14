@@ -11,3 +11,109 @@ exports[`Week component matches snapshot 1`] = `
   </div>
 </div>
 `;
+
+exports[`Week component matches snapshot in holiday mode 1`] = `
+<div
+  className="content week"
+>
+  <div
+    className="centered"
+  >
+    nothing to see, it's a holiday
+  </div>
+</div>
+`;
+
+exports[`Week component matches snapshot with data 1`] = `
+<div
+  className="content week"
+>
+  <div
+    className="cooking"
+  >
+    <span
+      className="cook-combo"
+    >
+      cook combo: 
+      <div
+        className="pagination"
+      >
+        <Link
+          className="next-week"
+          replace={false}
+          to="/cookbot/week/NaN"
+        >
+          Next Week
+           
+        </Link>
+      </div>
+    </span>
+    <div
+      className="cooking-days"
+    >
+      <div
+        className="cooking-day"
+        key="Testeenth of Testember"
+      >
+        <div
+          className="datum"
+        >
+          <div
+            className="title"
+          >
+            Date:
+          </div>
+          <div
+            className="value"
+          >
+            Testeenth of Testember
+          </div>
+        </div>
+        <div
+          className="datum"
+        >
+          <div
+            className="title"
+          >
+            Cooks:
+          </div>
+          <div
+            className="value"
+          >
+            Testman, Testwoman, Testperson
+          </div>
+        </div>
+        <div
+          className="datum"
+        >
+          <div
+            className="title"
+          >
+            Suggestions:
+          </div>
+          <div
+            className="value list"
+          >
+            <a
+              href="example.com/recipes/1"
+              key="example.com/recipes/1"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Recipe 1
+            </a>
+            <a
+              href="example.com/recipes/2"
+              key="example.com/recipes/2"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Recipe 2
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
