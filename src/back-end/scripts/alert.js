@@ -1,3 +1,7 @@
 const weekly = require('../weekly');
 
-weekly.sendMail();
+if (!process.env.PAUSE_FOR_HOLIDAY) {
+  weekly.sendMail();
+} else {
+  console.warn("not running weekly alert, it's a holiday");
+}

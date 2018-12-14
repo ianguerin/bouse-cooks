@@ -4,6 +4,7 @@ simple front end, and back end for automated weekly email digest
 - node.js and express - server
 - sendgrid - emailing from node.js server
 - heroku - deploying and hosting and scheduled daily process
+- new relic - application monitoring
 - git - source control
 - react - front end templating library
 - mongodb - database
