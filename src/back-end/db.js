@@ -4,7 +4,8 @@ const {
   MONGO_URL,
   DB_NAME,
   COLLECTION_NAME,
-  USER_COLLECTION_NAME
+  USER_COLLECTION_NAME,
+  EGG_COLLECTION_NAME
 } = require('./constants');
 
 const readUsers = () => {
@@ -97,8 +98,39 @@ const writeCurrIndex = index => {
   });
 };
 
+const addEgg = name => {
+  return new Promise((resolve, reject) => {
+    MongoClient.connect(
+      MONGO_URL,
+      { useNewUrlParser: true },
+      function(err, client) {
+        if (err) {
+          console.error(err);
+          reject();
+          return;
+        }
+
+        const db = client.db(DB_NAME);
+        const collection = db.collection(EGG_COLLECTION_NAME);
+
+        collection.insertOne({ name }, function(err) {
+          if (err) {
+            console.error(err);
+            reject();
+            return;
+          }
+
+          client.close();
+          resolve();
+        });
+      }
+    );
+  });
+};
+
 module.exports = {
   readUsers,
   readCurrIndex,
-  writeCurrIndex
+  writeCurrIndex,
+  addEgg
 };

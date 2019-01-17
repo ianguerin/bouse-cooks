@@ -38,6 +38,8 @@ const COLLECTION_NAME =
   process.env.NODE_ENV === 'production' ? 'docs_prod' : 'docs';
 
 const USER_COLLECTION_NAME = 'users';
+const EGG_COLLECTION_NAME =
+  process.env.NODE_ENV === 'production' ? 'eggs_prod' : 'eggs';
 
 const DATE_FORMAT = 'dddd, MMMM Do';
 
@@ -52,6 +54,7 @@ module.exports = {
   DB_NAME,
   COLLECTION_NAME,
   USER_COLLECTION_NAME,
+  EGG_COLLECTION_NAME,
   DATE_FORMAT,
   START_ISO
 };

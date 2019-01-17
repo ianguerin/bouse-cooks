@@ -7,6 +7,7 @@ import {
 import React from 'react';
 
 import Header from './Header';
+import Eggs from './Eggs';
 import Home from './Home';
 import Week from './Week';
 
@@ -20,6 +21,7 @@ export default class App extends React.Component {
           <Header />
           <Switch>
             <Route exact path="/cookbot/week/:week?" component={Week} />
+            <Route exact path="/eggs" component={Eggs} />
             <Route exact path="/" component={Home} />
             <Redirect to="/" />
           </Switch>

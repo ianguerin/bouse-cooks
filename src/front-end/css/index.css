@@ -135,3 +135,51 @@ a:hover {
 .week .cooking {
   width: 100%;
 }
+
+
+.eggs {
+  background: white;
+  color: black;
+}
+.eggs-inner {
+  display: flex;
+  flex-grow: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.eggs .chicken {
+  flex: 1 0 auto;
+  border-style: solid;
+  border-radius: 25px;
+  width: 50%;
+  height: 100px;
+  justify-content:center;
+  text-align: center;
+  cursor: pointer;
+}
+.eggs .chicken.boba {
+  border-color: gold;
+  background: black;
+  color: gold;
+}
+.eggs .chicken.uncle-chicken {
+  border-color: black;
+  background: white;
+}
+.eggs .chicken.cha-cha {
+  border-color: black;
+  background: gold;
+}
+.eggs .chicken.unclear{
+  border-color: gray;
+  background: #eee;
+}
+.eggs .who-laid {
+  margin: 0 auto;
+  flex-basis: 100%;
+  text-align: center;
+}
+.eggs .congrats {
+  margin: 0 auto;
+  color: blue;
+}
