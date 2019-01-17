@@ -9,6 +9,8 @@ export default class Header extends React.Component {
         {' / '}
         <Link to="/cookbot/week">cookbot</Link>
         {' / '}
+        <Link to="/eggs">eggs</Link>
+        {' / '}
         <a
           className="external"
           target="_blank"

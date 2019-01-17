@@ -2,6 +2,7 @@ const path = require('path');
 const multer = require('multer');
 
 const weekly = require('./weekly');
+const egg = require('./egg');
 
 const constructRoutes = app => {
   app.get('/api/week/:week?', async (req, res) => {
@@ -15,6 +16,16 @@ const constructRoutes = app => {
     const responseValue = await weekly.getDigest(week);
 
     res.send({ digests: responseValue });
+  });
+
+  app.post('/api/add-egg/:name', (req, res) => {
+    if (!req.params.name) {
+      res.sendStatus(501);
+      return;
+    }
+
+    egg.updateEggCounter(req.params.name);
+    res.sendStatus(200);
   });
 
   app.post('/api/sendgrid/incoming', multer().any(), (req, res) => {
