@@ -13,7 +13,7 @@
     "dev:front": "parcel watch src/front-end/index.html",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "weekly": "PAUSE_FOR_HOLIDAY=true node src/back-end/scripts/alert"
+    "weekly": "node src/back-end/scripts/alert"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
