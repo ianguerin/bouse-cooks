@@ -15,7 +15,7 @@ export default class Header extends React.Component {
           className="external"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.instagram.com/cubcoop/"
+          href="https://www.instagram.com/bousecoop/"
         >
           insta
         </a>
