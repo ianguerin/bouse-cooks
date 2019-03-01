@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { instaLink } from '../constants';
 
 export default class Header extends React.Component {
   render() {
@@ -9,13 +10,11 @@ export default class Header extends React.Component {
         {' / '}
         <Link to="/cookbot/week">cookbot</Link>
         {' / '}
-        <Link to="/eggs">eggs</Link>
-        {' / '}
         <a
           className="external"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.instagram.com/bousecoop/"
+          href={instaLink}
         >
           insta
         </a>

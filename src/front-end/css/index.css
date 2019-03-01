@@ -54,6 +54,14 @@ a:hover {
   align-items: center;
   flex-grow: 1;
 }
+.content .v-centered {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: center;
+}
 
 .home {
   font-size: 192px;
@@ -182,4 +190,38 @@ a:hover {
 .eggs .congrats {
   margin: 0 auto;
   color: blue;
+}
+
+
+.boux-thanks.content{
+  background: white;
+  color: black;
+}
+.boux-thanks a,
+.boux-thanks a:visited {
+  color: black;
+}
+.boux-thanks a:hover {
+  color: white;
+  background-color: black;
+}
+.boux-thanks a > img {
+  width: 60%;
+  max-width: 600px;
+  min-width: 200px;
+}
+.boux-thanks .chickens .bar {
+  display: flex;
+  justify-content: center;
+}
+.boux-thanks .venmo-qr {
+  flex-grow: 1;
+  display: block;
+}
+.boux-thanks .chickens .bar img {
+  display: block;
+  align-self: flex-start;
+  width: 20%;
+  max-width: 300px;
+  min-width: 100px;
 }

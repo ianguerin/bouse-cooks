@@ -20,6 +20,11 @@ exports[`App component matches snapshot 1`] = `
       <Route
         component={[Function]}
         exact={true}
+        path="/boux"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
         path="/"
       />
       <Redirect
