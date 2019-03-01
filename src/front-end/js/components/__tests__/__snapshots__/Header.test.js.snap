@@ -18,13 +18,6 @@ exports[`Header component matches snapshot 1`] = `
     cookbot
   </Link>
    / 
-  <Link
-    replace={false}
-    to="/eggs"
-  >
-    eggs
-  </Link>
-   / 
   <a
     className="external"
     href="https://www.instagram.com/bousecoop/"
