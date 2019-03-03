@@ -9,7 +9,7 @@
     "lint": "eslint ./src/*",
     "lint:fix": "npm run lint -- --fix",
     "format": "prettier-eslint --write \"src/**/*.js\"",
-    "dev:back": "NODE_ENV=dev PAUSE_FOR_HOLIDAY=true node src/back-end/server",
+    "dev:back": "NODE_ENV=dev node src/back-end/server",
     "dev:front": "parcel watch src/front-end/index.html",
     "test": "jest",
     "test:watch": "jest --watch",

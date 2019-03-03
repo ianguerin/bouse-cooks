@@ -5,26 +5,21 @@ exports[`Header component matches snapshot 1`] = `
   className="header"
 >
   <Link
+    key="0"
     replace={false}
-    to="/"
+    to="/test"
   >
-    bouse
-  </Link>
-   / 
-  <Link
-    replace={false}
-    to="/cookbot/week"
-  >
-    cookbot
+    test
   </Link>
    / 
   <a
     className="external"
-    href="https://www.instagram.com/bousecoop/"
+    href="http://test.example.com"
+    key="1"
     rel="noopener noreferrer"
     target="_blank"
   >
-    insta
+    test example
   </a>
 </div>
 `;
