@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Week from '../Week';
+import Week from '../bouse/Week';
 
 describe('Week component', () => {
   it('matches snapshot', () => {

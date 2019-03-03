@@ -48,3 +48,8 @@ npm run lint
 ```
 npm run lint:fix
 ```
+
+### authenticated with mongodb
+```
+source ./mongo.sh
+```

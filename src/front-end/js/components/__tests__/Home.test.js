@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Home from '../Home';
+import Home from '../bouse/Home';
 
 describe('Home component', () => {
   it('matches snapshot', () => {

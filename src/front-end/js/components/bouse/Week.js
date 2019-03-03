@@ -31,7 +31,6 @@ export default class Week extends React.Component {
 
     const response = await fetch(`/api/week/${week}`);
     const json = await response.json();
-    console.log({ json });
 
     if (json.isHoliday) {
       return this.setState({

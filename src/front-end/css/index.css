@@ -16,7 +16,6 @@ a:hover {
   color: black;
   background-color: white;
 }
-
 .external,
 .external:visited {
   color: blue;
@@ -24,6 +23,9 @@ a:hover {
 .external:hover {
   color: white;
   background-color: blue;
+}
+.not-bold-emoji {
+  font-size: 60px;
 }
 
 .app-router {
@@ -201,12 +203,16 @@ a:hover {
 .boux-thanks a:visited {
   color: black;
 }
+.boux-thanks .body {
+  padding: 0 32px;
+  max-width: 600px;
+}
 .boux-thanks a:hover {
   color: white;
   background-color: black;
 }
 .boux-thanks a > img {
-  width: 60%;
+  width: 40%;
   max-width: 600px;
   min-width: 200px;
 }
@@ -224,4 +230,44 @@ a:hover {
   width: 20%;
   max-width: 300px;
   min-width: 100px;
+}
+
+.boux-facts.content{
+  padding: 20px;
+  background: white;
+  color: black;
+}
+.boux-facts .fact {
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+}
+.boux-facts .fact .question {
+  color: gold;
+}
+.boux-facts .fact .answer {
+  display: flex;
+  padding: 20px 0 0 20px;
+}
+.boux-facts .fact .answer .fact-link {
+  display: block;
+  margin-top: 20px;
+  font-style: italic;
+}
+.boux-facts .fact img {
+  align-self: center;
+  margin-right: 20px;
+  flex: 0 0 20%;
+  border-radius: 100%;
+  width: 20%;
+  max-width: 300px;
+  min-width: 100px;
+  filter: grayscale(100%);
+}
+.boux-facts .fact:hover img {
+  filter: none;
 }

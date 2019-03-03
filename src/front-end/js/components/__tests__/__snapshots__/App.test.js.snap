@@ -5,31 +5,14 @@ exports[`App component matches snapshot 1`] = `
   <div
     className="app-router"
   >
-    <Header />
     <Switch>
       <Route
         component={[Function]}
-        exact={true}
-        path="/cookbot/week/:week?"
-      />
-      <Route
-        component={[Function]}
-        exact={true}
-        path="/eggs"
-      />
-      <Route
-        component={[Function]}
-        exact={true}
         path="/boux"
       />
       <Route
         component={[Function]}
-        exact={true}
         path="/"
-      />
-      <Redirect
-        push={false}
-        to="/"
       />
     </Switch>
   </div>
