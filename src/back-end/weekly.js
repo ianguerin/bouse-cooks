@@ -22,7 +22,7 @@ const getDigest = async requestedWeek => {
   const week = await getWeek(requestedWeek);
 
   const weeklyDigest = DAYS.map(async (day, i) => {
-    const orderIndex = i + week.moddedWeek * 2;
+    const orderIndex = i + week.moddedWeek * DAYS.length;
     const cookingDate = date.getCookingDateOnWeek(day.dayOfWeek, week);
 
     const userMap = {};
