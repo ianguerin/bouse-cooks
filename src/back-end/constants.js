@@ -21,10 +21,7 @@ const COOKING_ORDER = [
   ['C', 'D', 'F']
 ];
 
-const DAYS = [
-  { text: 'Monday', dayOfWeek: 1 },
-  { text: 'Wednesday', dayOfWeek: 3 }
-];
+const DAYS = [{ text: 'Monday', dayOfWeek: 1 }];
 
 const FROM = 'tim.the.robot@bouse.website';
 
