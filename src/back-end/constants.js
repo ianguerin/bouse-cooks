@@ -23,7 +23,7 @@ const COOKING_ORDER = [
 
 const DAYS = [{ text: 'Thursday', dayOfWeek: 4 }];
 
-const FROM = 'tim.the.robot@bouse.website';
+const FROM = 'tim.the.robot@bouse.casa';
 
 const MAX_POSSIBLE_WEEKS = COOKING_ORDER.length / DAYS.length;
 
