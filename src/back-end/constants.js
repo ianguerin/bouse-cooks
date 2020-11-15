@@ -27,10 +27,8 @@ const FROM = 'tim.the.robot@bouse.casa';
 
 const MAX_POSSIBLE_WEEKS = COOKING_ORDER.length / DAYS.length;
 
-const MONGO_URL = `mongodb://${process.env.MONGO_UN}:${
-  process.env.MONGO_PW
-}@ds115244.mlab.com:15244/bousecook`;
 const DB_NAME = 'bousecook';
+const MONGO_URL = `mongodb+srv://${process.env.MONGO_UN}:${process.env.MONGO_PW}@bousecook.29dcq.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`;
 const COLLECTION_NAME =
   process.env.NODE_ENV === 'production' ? 'docs_prod' : 'docs';
 
